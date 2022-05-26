@@ -1,0 +1,39 @@
+﻿@model IEnumerable<web.Models.Phone>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="~/css/style.css">
+</html>
+
+    <h2>Автомобили</h2>
+    <div class="phone-list">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Марка</th>
+                <th>Компания</th>
+                <th>Средняя цена</th>
+                <th>Страна</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Model</td>
+                    <td>@Html.ActionLink(item.Brand.Name, "Show_brand", new { item.Brand.Id })</td>
+                    <td>@item.Price</td>
+                    <td>@Html.ActionLink(item.Brand.Country, "Show_brand", new { item.Brand.Id })</td>
+                    
+                    <td>@Html.ActionLink("Редактировать", "EditPhone", item)</td>
+                    <td>@Html.ActionLink("Удалить", "Delete", item)</td>
+                </tr>
+            }
+        </table>
+    </div>
+
+<div class="but_creare">
+    @Html.ActionLink("Добавить автомобиль", "Create")
+</div>

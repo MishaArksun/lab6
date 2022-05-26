@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    font-size: 18px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td:first-child {
+    background: #0CAAB4;
+    color: white;
+}
+
+th, td {
+    border: 0.5px solid #fff;
+    padding: 10px;
+}
+
+td {
+    background: #6ca1e6;
+}
+
+a {
+    color: #000;
+    text-decoration: none !important;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.but_creare {
+    width: 260px;
+    text-align: center;
+    background-color: #0CAAB4;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.but_creare a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #37608C;
+}
+
+
+
+form{
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.dataBox {
+    width: 100px;
+    background-color: antiquewhite;
+}

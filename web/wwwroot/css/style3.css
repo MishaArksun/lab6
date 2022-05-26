@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    font-size: 18px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td:first-child {
+    background: #B1DAFA;
+    color: #000000;
+}
+
+th, td {
+    border: 0.5px solid #fff;
+    padding: 10px;
+}
+
+td {
+    background: #AEF5F0;
+}
+
+a {
+    color: #000;
+    text-decoration: none !important;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.but_creare {
+    width: 260px;
+    text-align: center;
+    background-color: #5E8ED1;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+    .but_creare a {
+        color: black;
+        font-weight: bold;
+    }
+
+a:hover {
+    color: #5E8ED1;
+}
+
+
+
+form, .instr-block {
+    width: 300px;
+    padding: 10px;
+    padding-top: 20px;
+    background: #B1DAFA;
+    border: 2px solid #0CAAB4;
+}
+    form .dataBox {
+        margin-bottom: 20px;
+        margin-left: 35px;
+    }
+        form .dataBox input {
+            height: 40px;
+            padding: 7px;
+            margin-top: 7px;
+            width: 200px;
+        }
+        form .dataBox select {
+            height: 40px;
+            padding: 7px;
+            margin-top: 7px;
+            width: 200px;
+            margin-bottom: 0px;
+        }
+        form .dataBox input[type=submit] {
+            background: #B1DAFA;
+            color: white;
+            font-size: 20px;
+            border: 2px solid white;
+        }
+            form .dataBox input[type=submit]:hover {
+                background: #09140E;
+            }
+.edit-block .back, .back {
+    margin-top: 10px;
+}
+.instr-block a {
+    display: inline-block;
+    background: #B1DAFA;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+}
+    .instr-block a:hover {
+        background: #09140E;
+    }
+       

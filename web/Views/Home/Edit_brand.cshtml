@@ -1,0 +1,32 @@
+﻿@model Brand;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="~/css/style.css">
+</html>
+<div class="edit-block">
+    
+    <h2>Страна</h2>
+    @using (Html.BeginForm("Edit_brand", "Home"))
+    {
+        @Html.HiddenFor(m => m.Id)
+        <div class="dataBox">
+            <label>Компания</label><br />
+            @Html.TextBoxFor(m => m.Name, new { @class = "text-box" })
+        </div>
+        <div class="dataBox">
+            <label>Страна</label><br />
+            @Html.TextBoxFor(m => m.Country, new { @class = "text-box" })
+        </div>
+        <br />
+        <div class="dataBox">
+            <input type="submit" value="Сохранить" />
+        </div>
+    }
+
+    <div class="back">
+        <a asp-action="Index">Вернуться</a>
+    </div>
+</div>
